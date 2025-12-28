@@ -34,6 +34,8 @@ public class ClientAsyncTask extends AsyncTask<String, String, Void> {
 
             socket.close();
 
+            // ex 5 facut deja + d) student@eim:~$ ps a | while read x; do echo "$x" | nc -N -l 2000;
+
         } catch (Exception exception) {
             Log.e(Constants.TAG, "An exception has occurred: " + exception.getMessage());
             if (Constants.DEBUG) {
